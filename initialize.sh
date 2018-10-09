@@ -34,6 +34,5 @@ eosiocpp -g contract.abi contract.cpp
 
 cleos set contract game . ./contract.wasm ./contract.abi
 
-cd ~/Desktop/prog/proj/eos/eosbattleship/printer
 
 
