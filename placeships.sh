@@ -5,6 +5,11 @@ echo This should give an error.
 cleos push action game remships [huzur] -p huzur@active
 cleos push action game placeship [huzur,"submarine",1,1,"s"] -p huzur@active
 
+
+cleos push action game placeship [huzur,"carrier",1,0,"s"] -p huzur@active
+cleos push action game removeship [huzur,"carrier"] -p huzur@active
+echo This should give an error.
+cleos push action game removeship [huzur,"battleship"] -p huzur@active
 cleos push action game placeship [huzur,"carrier",1,0,"s"] -p huzur@active
 cleos push action game placeship [huzur,"battleship",2,0,"s"] -p huzur@active
 cleos push action game placeship [huzur,"destroyer",3,0,"s"] -p huzur@active
